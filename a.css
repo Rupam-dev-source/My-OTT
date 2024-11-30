@@ -1,0 +1,295 @@
+body{
+    font: 400 15px lato, sans-serif;
+    line-height: 1.8;
+    color: rgb(33, 27, 27);
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(33, 27, 27);
+    font-weight: 600px;
+    margin-bottom: 30px;
+}
+h4{
+    font-size: 20px;
+    line-height: 1.375em;
+    color: rgb(33, 27, 27);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.jumbotron{
+    background-color: rgb(236, 63, 63);
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+}
+.bg-grey {
+    background-color: #e8e0e0; /* Gray color */
+}
+.container-fluid {
+    padding: 50px 45px;
+}
+.thumbnail{
+    border: none;
+    border-radius: 0;
+}
+/* Carousel container */
+#myCaro {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Set the max-width to fit your content */
+    margin: 0 auto;
+    background-color: #fafafa; /* Light gray background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    padding: 20px; /* Inner padding */
+}
+
+/* Carousel inner container */
+.carousel-inner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Each carousel item */
+.carousel-item {
+    display: none;
+    transition: opacity 0.75s ease;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.carousel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Carousel text (quotes and comment) */
+.carousel-item h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item span {
+    font-size: 1rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Carousel Indicators (dots) */
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.carousel-indicators button {
+    background-color: #bbb; /* Light gray for inactive dots */
+    border: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.carousel-indicators button.active {
+    background-color: #3498db; /* Blue for active dot */
+}
+
+/* Controls (Previous & Next) */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Darker background on hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    #myCaro {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .carousel-item h4 {
+        font-size: 1.2rem; /* Smaller font size on mobile */
+    }
+
+    .carousel-item span {
+        font-size: 0.9rem;
+    }
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+.item span {
+    font-style: normal;
+}
+/* Basic styling for the pricing section */
+#d {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+#d h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#d h4 {
+    font-size: 18px;
+    color: #777;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+/* Panel styling */
+.panel {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Panel heading styling */
+.panel-heading {
+    background-color: #f8f9fa;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+
+.panel-heading h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+/* Panel body styling */
+.panel-body {
+    background-color: #fff;
+    padding: 30px;
+    color: #333;
+}
+
+.panel-body p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Panel footer styling */
+.panel-footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.panel-footer h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.panel-footer h4 {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0 15px;
+}
+
+/* Button styling */
+.panel-footer .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.panel-footer .btn:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 767px) {
+    .col-sm-4 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #d h2 {
+        font-size: 28px;
+    }
+
+    #d h4 {
+        font-size: 16px;
+    }
+
+    .panel-heading h1 {
+        font-size: 24px;
+    }
+
+    .panel-footer h3 {
+        font-size: 20px;
+    }
+
+    .panel-footer h4 {
+        font-size: 14px;
+    }
+
+    .panel-footer .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+
